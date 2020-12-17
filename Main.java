@@ -7,12 +7,22 @@
  * @since 12/17/2020
 */
 
+import java.awt.*;
+import javax.swing.*;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends JApplet {
+    String message;
+    public void init() {
+        message = "Welcome to Parcel.ly!";
+    }
+
+    public void paint(Graphics screen){
+        Graphics2D screen2D = (Graphics2D) screen;
+        screen2D.drawString(message, 25, 50);
+    }
 
     public static void main(String[] args) {
-        System.out.println("Welcome to Parcel.ly!");
         System.out.println("You will now be asked to create a username and password.");
 
         // Ask the user to create a username
