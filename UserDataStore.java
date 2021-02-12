@@ -1,3 +1,6 @@
+// Code taken from Stackoverflow, not my work.
+// May incorporate parts of this eventually.
+
 import java.util.HashMap;
 import java.util.Map;
 
