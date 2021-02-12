@@ -9,7 +9,7 @@ public class Package {
     int numberOfBoxes;
     int numberOfItems;
 
-    public int getOrderNumber(){
+    public int getOrderNumber() {
         return orderNumber;
     }
 
@@ -17,7 +17,7 @@ public class Package {
         this.orderNumber = orderNumber;
     }
 
-    public String getReceiver(){
+    public String getReceiver() {
         return receiver;
     }
 
@@ -25,7 +25,7 @@ public class Package {
         this.receiver = receiver;
     }
 
-    public String getOwner(){
+    public String getOwner() {
         return owner;
     }
 
@@ -33,7 +33,7 @@ public class Package {
         this.owner = owner;
     }
 
-    public String getProduct(){
+    public String getProduct() {
         return product;
     }
 
@@ -45,7 +45,7 @@ public class Package {
         this.hasShipped = hasShipped;
     }
 
-    public int getNumberOfBoxes(){
+    public int getNumberOfBoxes() {
         return numberOfBoxes;
     }
 
@@ -53,7 +53,7 @@ public class Package {
         this.numberOfBoxes = numberOfBoxes;
     }
 
-    public int getNumberOfItems(){
+    public int getNumberOfItems() {
         return numberOfItems;
     }
 
@@ -61,9 +61,13 @@ public class Package {
         this.numberOfItems = numberOfItems;
     }
 
-    public Package (boolean hasShipped, int numberOfBoxes, int numberOfItems) {
-        this.hasShipped = hasShipped;
-        this.numberOfBoxes =numberOfBoxes;
+    public Package(int orderNumber, String product, String owner, String receiver, int numberOfBoxes, int numberOfItems, boolean hasShipped) {
+        this.orderNumber = orderNumber;
+        this.owner = owner;
+        this.receiver = receiver;
+        this.product = product;
+        this.numberOfBoxes = numberOfBoxes;
         this.numberOfItems = numberOfItems;
+        this.hasShipped = hasShipped;
     }
 }
