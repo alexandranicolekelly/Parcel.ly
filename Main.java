@@ -104,12 +104,5 @@ public class Main {
             System.out.println("Invalid Response. Please answer using either Yes or No.\n");
         }
 
-        /* Practice with objects - will expand on
-        Package insertName = new Package(true, 1, 3);
-        System.out.printf("Property has %d item(s) in %d box(es) and %s been shipped",
-                insertName.getNumberOfItems(),
-                insertName.getNumberOfBoxes(),
-                (insertName.getHasShipped() )?"has":"has not");
-        */
     }
 }
